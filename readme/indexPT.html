@@ -1,0 +1,213 @@
+<!DOCTYPE html> 
+<html>
+	<head> 
+		<meta charset="utf-8" />
+		<title>Moip Checkout Transparente</title> 
+		<link rel="stylesheet" href="style.css" /> 
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="jquery.scrollTo-1.4.2-min.js"></script>
+		<script src="jquery.localscroll-1.2.7-min.js"></script>
+		<!-- Resources Used 
+		--> 
+		<script>
+			$(document).ready(function () {  
+
+				var sidebar = $('#sidebar_content');
+				var top = sidebar.offset().top - parseFloat(sidebar.css('marginTop'));
+
+				$(window).scroll(function (event) {
+					var ypos = $(this).scrollTop();
+					if (ypos >= top) {
+						sidebar.addClass('fixed');
+					}
+					else {
+						sidebar.removeClass('fixed');
+					}
+				});
+
+				$.localScroll();
+				
+			});
+			
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1 id="title">Moip Checkout Transparente</h1>
+			<small>Authors: Valdeir Santana &lt;valdeirpsr@hotmail.com.br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Glauco Oliveira &lt;csakaos@hotmail.com&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Manoel Vidal &lt;manoelvidal@opencartbrasil.com.br&gt;</small>
+			<hr>
+			<div id="primary">
+				<h3 id="1">Creative Commons</h3>
+				<ul class="section_menu">
+					<li><a href="#1_1">O que é Creative Commons.</a></li>
+					<li><a href="#1_2">Direitos básicos.</a></li>
+				</ul>
+				<dl class="faq">
+				  <dt id="1_1">O que é Creative Commons.</dt>
+				    <dd>O Creative Commons é um projeto global, presente em mais de 40 países, que cria um novo modelo de gestão dos direitos autorais. No Brasil, ele é coordenado pela Escola de Direito da Fundação Getulio Vargas no Rio de Janeiro. Ele permite que autores e criadores de conteúdo, como músicos, cineastas, escritores, fotógrafos, blogueiros, jornalistas e outros, possam permitir alguns usos dos seus trabalhos por parte da sociedade. Assim, se eu sou um criador intelectual, e desejo que a minha obra seja livremente circulada pela Internet, posso optar por licenciar o meu trabalho escolhendo alguma das licenças do Creative Commons. Com isso, qualquer pessoa, em qualquer país, vai saber claramente que possui o direito de utilizar a obra, de acordo com a licença escolhida.</dd>
+				  <dt id="1_2">Direitos básicos.</dt>
+				    <dd>Todas as Licenças Creative Commons possuem caracterísitcas importantes em comum.
+						<br />
+						<br />
+						<strong>Todas licenças permitem que você:</strong><br />
+							<blockquote>mantenha seu direito autoral<br />
+							anuncie que os direitos de uso legítimo, de liberdade de expressão e a exaustão dos direitos autorais (first sale) não são afetados pela licença.</blockquote><br />
+						<strong>Toda licença requer que os licenciados:<br /></strong>
+							<blockquote>Obtenham previamente sua permissão se desejarem fazer usos restritos por você - por exemplo, fazer uso comercial, criar obras derivadas, etc;<br />
+							mantenha o aviso de direitos autorais intacto em todas as cópia de sua obra;<br />
+							coloquem um link para a licença nas cópias da sua obra;<br />
+							não alterarem os termos dessa licença<br />
+							não utilizem tecnologia para restringir usos legais de sua obra por outros licenciados<br /></blockquote>
+						<br />
+						<strong>Contanto que os licenciados respeitem as condições impostas por você, toda licença permite:<br /></strong>
+							<blockquote>copiar a obra<br />
+							distribuir a obra<br />
+							exibir a obra ou executá-la publicamente<br />
+							executar a obra publicamente por meios digitais (por exemplo, webcasting)<br />
+							transpor a obra para outro formato desde que seja uma cópia idêntica<br /></blockquote>
+						<br />
+						<strong>Toda licença<br /></strong>
+							<blockquote>tem aplicação mundial<br />
+							dura por todo o tempo de proteção do direito autoral<br />
+							não é revogável</blockquote>
+					</dd>
+				</dl>
+				<h3 id="2">Projeto</h3>
+				<ul class="section_menu">
+					<li><a href="#2_1">O que é o projeto.</a></li>
+					<li><a href="#2_2">Vantagens.</a></li>
+					<li><a href="#2_3">Requisitos.</a></li>
+					<li><a href="#2_4">Instalação.</a></li>
+					<li><a href="#2_5">Desinstalar.</a></li>
+					<li><a href="#2_6">Agradecimentos.</a></li>
+				</ul>
+				<dl class="faq">
+				  <dt id="2_1">O que é o projeto.</dt>
+				    <dd>O projeto "MOIP Transparente", foi criado para facilitar a compra para o usuário final. O projeto quando instalado tem a função de tornar a compra mais fácil pois ele 'elimina' o famoso 'redirecionamento'.</dd>
+				  <dt id="2_2">Vantagens</dt>
+				    <dd>
+						<strong>Pagamento feito totalmente em seu e-commerce ou site</strong>
+						<blockquote>O cliente fica no ambiente do seu e-commerce ou site durante todo o processo de compra, sem necessidade de cadastro ou páginas intermediárias de pagamento.</blockquote><br/>
+						<strong>Compra por 1 clique</strong>
+						<blockquote>Na primeira compra, você poderá optar por salvar os dados do cartão de crédito do seu cliente. Com isso, o cliente poderá comprar novamente em seu e-commerce ou site sem precisar digitar todos os dados de pagamento. Esta funcionalidade torna o processo de compra muito mais simples e rápido.</blockquote><br/>
+						<strong>Aumento de conversão de suas vendas</strong>
+						<blockquote>Você pode ter um aumento de até 30% na conversão de suas vendas, uma vez que, o número de etapas do seu checkout será reduzido e seus clientes não serão direcionados para páginas externas ao seu e-commerce ou site.</blockquote><br/>
+						<strong>Segurança de dados feita pelo Moip</strong>
+						<blockquote>Os dados de pagamento dos seus clientes são direcionados diretamente do navegador para o Moip. Sem passar por seus servidores, assim não precisa se preocupar com a segurança destas informações.</blockquote><br/>
+					</dd>
+				  <dt id="2_3">Requisitos.</dt>
+				    <dd>
+						<strong>OpenCart:</strong> 1.5.x<br/>
+						<strong>VQmod:</strong> Não
+					</dd>
+					<dt id="2_4">Instalação</dt>
+				    <dd>
+						<strong>1 - </strong>Extraia o arquivo moip.zip no seu computador.<br/>
+						<strong>2 - </strong>Copie as pastas "admin", "catalog", "image" e "retorno_moip.php" para a raiz de sua loja.<br/>
+						<strong>3 - </strong>Acesse <a href="javascript:(0)">http://www.SEUDOMINIO.com.br/admin/</a>.<br/>
+						<strong>4 - </strong>Faça seu login no painel administrativo.<br/>
+						<strong>5 - </strong>Vá em Extensões > Formas de Pagamento > Localize 'MOIP' e clique em instalar (ao lado).<br/>
+						<strong>6 - </strong>Depois do módulo instalado, dê as permissões indo menu Configurações > Usuários > Grupos de Usuários > Clique em Editar no grupo que irá receber a permissão > Localize e marque a opção payment/moip em Permissão de Acesso e Permissão de Modificação.<br/>
+						<strong>7 - </strong>Agora voltemos no menu Extensões > Formas de Pagamento > Moip > e agora é só editar conforme as dias.<br/>
+						<strong>9 - </strong>Depois de tudo isso basta acessar <a href="#">http://www.SEUDOMINIO.com.br/moip_install_db.php</a><br/>
+					</dd>
+					<h3 id="2_5">Configurações</h3>
+						<ul class="section_menu">
+						<li><a href="#2_7_1">Configuração Básica.</a></li>
+						<li><a href="#2_7_2">Configuração Avançada.</a></li>
+					</ul>
+					<dt id="2_5_1">Configuração Básica</dt>
+				    <dd>
+						Configuraçõe Básica
+					</dd>
+					<dt id="2_5_2">Configuração Avançada</dt>
+				    <dd>
+						<strong>Alterando Quantidades de Parcelas e Juros</strong>
+						<blockquote>
+							<strong>1 - </strong>Abra o arquivo catalog/view/theme/default/template/payment/moip.tpl<br/>
+							<strong>2 - </strong>Localize as linhas <i>145 à 150</i> e altere para:<br/>
+							<strong><br/><span style="color:#AA9900;">&lt;Parcelamentos&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;Parcelamento&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;MinimoParcelas&gt;</span>2<span style="color:#AA9900;">&lt;/MinimoParcelas&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;MaximoParcelas&gt;</span>2<span style="color:#AA9900;">&lt;/MaximoParcelas&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;Juros&gt;</span>1.99<span style="color:#AA9900;">&lt;/Juros&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;/Parcelamento&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;Parcelamento&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;MinimoParcelas&gt;</span>3<span style="color:#AA9900;">&lt;/MinimoParcelas&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;MaximoParcelas&gt;</span>4<span style="color:#AA9900;">&lt;/MaximoParcelas&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;Juros&gt;</span>0<span style="color:#AA9900;">&lt;/Juros&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;/Parcelamento&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;Parcelamento&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;MinimoParcelas&gt;</span>5<span style="color:#AA9900;">&lt;/MinimoParcelas&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;MaximoParcelas&gt;</span>6<span style="color:#AA9900;">&lt;/MaximoParcelas&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;Repassar&gt;</span>true<span style="color:#AA9900;">&lt;/Repassar&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;/Parcelamento&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;Parcelamento&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;MinimoParcelas&gt;</span>7<span style="color:#AA9900;">&lt;/MinimoParcelas&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;MaximoParcelas&gt;</span>12<span style="color:#AA9900;">&lt;/MaximoParcelas&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;Juros&gt;</span>10.00<span style="color:#AA9900;">&lt;/Juros&gt;</span><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;/Parcelamento&gt;</span><br/>
+							<span style="color:#AA9900;">&lt;/Parcelamentos&gt;</span></strong>
+							<br/><br/><br/>
+							<strong>&lt;Juros&gt;</strong>
+							<blockquote>
+								<strong>Descrição: </strong>Valor de juros a ser aplicado por parcela do pagamento, baseado em tabela price (amortização dos juros em parcelas iguais).<br/>
+								<strong>Tipo: </strong>decimal(5,2)<br/>
+								<strong>Formato: </strong>Percentual<br/>
+								<strong>Ex: </strong>1.99<br/>
+								<strong>Obrigátorio: </strong>Sim
+							</blockquote>
+							<strong>&lt;/Juros&gt;</strong>
+							<br/><br/>
+							<strong>&lt;Repassar&gt;</strong>
+							<blockquote>
+								<strong>Descrição: </strong>Cálculo automático dos juros para compensar a taxa de antecipação de parcelamento, garantindo o recebimento liquido igual de uma venda à vista.<br/>
+								<strong>Tipo: </strong>boolean()<br/>
+								<strong>Formato: </strong>true(1) ou false(0)<br/>
+								<strong>Ex: </strong>true<br/>
+								<strong>Obrigátorio: </strong>Não
+							</blockquote>
+							<strong>&lt;/Repassar&gt;</strong>
+						</blockquote>
+					</dd>
+				  <dt id="2_6">Desinstalação.</dt>
+				    <dd>
+						<strong>1 - </strong>Acesse: <b>http://www.seudominio.com.br/admin/</b>.<br/>
+						<strong>2 - </strong>Faça seu login.<br/>
+						<strong>3 - </strong>Vá em <i>Extensões</i> > <i>Formas de Pagamento</i> > Procure por <i>'MOIP'</i> e clique em <i>Desinstalar</i> (ao lado).<br/>
+						<strong>4 - </strong>Pronto! O Módulo foi desinstalado com sucesso.
+					</dd>
+				  <dt id="2_7">Agradecimentos.</dt>
+				    <dd>Muito Obrigado a você por utilizar nosso módulo.
+					<br/><br/>
+					<strong>Agradecimentos ao Desenvolvedores</strong><br/>
+					<a href="#" target="_blank">Glauco Oliveira</a> &lt;csakaos@hotmail.com&gt;<br/>
+					<a href="http://www.opencartbrasil.com.br/" target="_blank">Manoel Vidal</a> &lt;manoelvidal@opencartbrasil.com.br&gt;<br/>
+					<a href="http://www.facebook.com/valdeirpsr/" target="_blank">Valdeir Santana</a> &lt;valdeirpsr@hotmail.com.br&gt;<br/>
+					</dd>
+				</dl>
+			</div>
+			<div id="sidebar">
+				<div id="sidebar_content">
+					<h3>Categoria</h3>
+					<ul class="section_menu">
+						<li><a href="#1">Creative Commons</a></li>
+						<li><a href="#2">O Projeto</a></li>
+						<li><a href="#2_1">O que é o projeto</a></li>
+						<li><a href="#2_2">Vantagens</a></li>
+						<li><a href="#2_3">Requisitos</a></li>
+						<li><a href="#2_4">Instalação</a></li>
+						<li><a href="#2_5_1">Configurações Básicas</a></li>
+						<li><a href="#2_5_2">Configurações Avançadas</a></li>
+						<li><a href="#2_6">Desinstalar</a></li>
+						<li><a href="#2_7">Agradecimentos</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<footer>Copyright &copy; 2012 - -=VaLdEiR PsR=- | valdeir_webdesign@hotmail.com</footer>
+	</body>
+</html>
