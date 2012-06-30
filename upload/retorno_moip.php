@@ -148,7 +148,7 @@ if ($id_transacao->row >= 1) {
 	}
 	
 	//Adiciona a alteração na tabela order_history (histórico de pedido)
-	$db->query("INSERT INTO `razek_loja`.`order_history` (`order_id`, `order_status_id`, `notify`, `comment`, `date_added`) VALUES ('".$_POST['id_transacao']."', '".$status."', '".$notify."', '".$db->escape(strip_tags($mensagem))."', NOW())");
+	$db->query("INSERT INTO ". DB_PREFIX ."`order_history` (`order_id`, `order_status_id`, `notify`, `comment`, `date_added`) VALUES ('".$_POST['id_transacao']."', '".$status."', '".$notify."', '".$db->escape(strip_tags($mensagem))."', NOW())");
 	
 }else{
 	//Caso não exista o id recebido pelo moip na tabela moip_nasp, inseri os dados recebidos do moip na tabela moip_nasp
@@ -171,28 +171,3 @@ if ($id_transacao->row >= 1) {
 }
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

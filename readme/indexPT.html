@@ -98,7 +98,7 @@
 						<strong>Segurança de dados feita pelo Moip</strong>
 						<blockquote>Os dados de pagamento dos seus clientes são direcionados diretamente do navegador para o Moip. Sem passar por seus servidores, assim não precisa se preocupar com a segurança destas informações.</blockquote><br/>
 					</dd>
-				  <dt id="2_3">Requisitos.</dt>
+					<dt id="2_3">Requisitos.</dt>
 				    <dd>
 						<strong>OpenCart:</strong> 1.5.x<br/>
 						<strong>VQmod:</strong> Não
@@ -106,28 +106,69 @@
 					<dt id="2_4">Instalação</dt>
 				    <dd>
 						<strong>1 - </strong>Extraia o arquivo moip.zip no seu computador.<br/>
-						<strong>2 - </strong>Copie as pastas "admin", "catalog", "image" e "retorno_moip.php" para a raiz de sua loja.<br/>
+						<strong>2 - </strong>Copie as pastas "admin", "catalog", "image" e o arquivo "retorno_moip.php" para a raiz de sua loja.<br/>
 						<strong>3 - </strong>Acesse <a href="javascript:(0)">http://www.SEUDOMINIO.com.br/admin/</a>.<br/>
 						<strong>4 - </strong>Faça seu login no painel administrativo.<br/>
 						<strong>5 - </strong>Vá em Extensões > Formas de Pagamento > Localize 'MOIP' e clique em instalar (ao lado).<br/>
 						<strong>6 - </strong>Depois do módulo instalado, dê as permissões indo menu Configurações > Usuários > Grupos de Usuários > Clique em Editar no grupo que irá receber a permissão > Localize e marque a opção payment/moip em Permissão de Acesso e Permissão de Modificação.<br/>
-						<strong>7 - </strong>Agora voltemos no menu Extensões > Formas de Pagamento > Moip > e agora é só editar conforme as dias.<br/>
+						<strong>7 - </strong>Agora voltemos no menu Extensões > Formas de Pagamento > Moip > e agora é só editar conforme as dicas.<br/>
 						<strong>9 - </strong>Depois de tudo isso basta acessar <a href="#">http://www.SEUDOMINIO.com.br/moip_install_db.php</a><br/>
 					</dd>
-					<h3 id="2_5">Configurações</h3>
-						<ul class="section_menu">
-						<li><a href="#2_7_1">Configuração Básica.</a></li>
-						<li><a href="#2_7_2">Configuração Avançada.</a></li>
-					</ul>
-					<dt id="2_5_1">Configuração Básica</dt>
+					<dt id="2_5">Token e Key de Produção</dt>
 				    <dd>
-						Configuraçõe Básica
+						Para receber o Token e Key de produção, seu site deverá ser homologado pela equipe do MoiP para isso basta acessar:<br/>
+						<strong> 1 - </strong><a href="https://www.moip.com.br/">https://www.moip.com.br/</a><br/>
+						<strong> 2 - </strong>Entre em contato com o MoiP pedindo o Token e Key de produção (Informe seu login MoiP e a url de sua aplicação)<br/>
+						<strong> 3 - </strong>Depois da homologação você receberá um email informando seu Token e sua Key de produção<br/>
+						<strong> 4 - </strong>Depois desse processo seu site estraá apto para utilizar o Checkout transparente.
 					</dd>
-					<dt id="2_5_2">Configuração Avançada</dt>
+					<dt id="2_6">Token e Key de Teste</dt>
 				    <dd>
+						Para receber o Token e Key de produção, seu site deverá ser homologado pela equipe do MoiP para isso basta se cadastrar no site:<br/>
+						<strong> 1 - </strong><a href="http://labs.moip.com.br/sandbox/">http://labs.moip.com.br/sandbox/</a><br/>
+						<strong> 2 - </strong>Depois de cadastrado, faça seu login.<br/>
+						<strong> 2 - </strong>Acesse o menu Ferramentas > API MoiP > Chaves de Acesso.<br/>
+					</dd>
+					<dt id="2_7">Retorno Automático</dt>
+				    <dd>
+						Para seu cliente receber a notificação do status de pagamento automáticamente é necessário casdastrar sua url de retorno automático, para isso basta acessar:<br/>
+						<strong> 1 - </strong><a href="https://www.moip.com.br/">https://www.moip.com.br/</a><br/>
+						<strong> 2 - </strong>Ir no menu <i>Meus Dados</i> > <i>Preferências</i> > <i>Notificação das transações</i><br/>
+						<strong> 3 - </strong>Marcar a opção <i>Receber notificação instantânea de transação</i><br/>
+						<strong> 4 - </strong>Cadastar sua url em <i>URL de notificação</i> (ex: http://www.SEUDOMINIO.com.br/retorno_moip.php).<br/>
+						<strong> 5 - </strong>Clicar em <i>Confirmar Alterações</i>.
+					</dd>
+					<h3 id="2_8">Configurações</h3>
+						<ul class="section_menu">
+						<li><a href="#2_8_1">Configuração Básica.</a></li>
+						<li><a href="#2_8_2">Configuração Avançada.</a></li>
+					</ul>
+					<dt id="2_8_1">Configuração Básica</dt>
+				    <dd>
+						<strong>Status - </strong>Opção para habilitar ou desabilitar o módulo de pagamento.<br />
+						<strong>Razão do Pagamento - </strong>Nome da sua empresa/loja virtual, será exibido nos detalhes do pagamento no site do MoiP.<br />
+						<strong>Token - </strong>Chave para poder ter liberação do módulo <a href="#2_5">(Como receber o Token)</a>.<br />
+						<strong>Key - </strong>Chave para poder ter liberação do módulo <a href="#2_5">(Como receber a Key)</a>.<br />
+						<strong>Modo de Teste - </strong>Coloca o módulo em teste ou em produção. (Para o módulo entrar em modo de produção é nescessário o Token e a Key).<br />
+						<strong>Notificar Cliente - </strong>Notifica o cliente automáticamente quando o status do pagamento for alterado no site do MoiP.<br />
+						<strong>Status Autorizado - </strong>Status quando o pagamento for autorizado pelo MoiP.<br />
+						<strong>Status Iniciado - </strong>Status quando o pagamento for iniciado pelo MoiP.<br />
+						<strong>Status Boleto Impresso - </strong>Status quando o boleto for impresso.<br />
+						<strong>Status Completo - </strong>Status quando o pagamento estiver completo.<br />
+						<strong>Status Cancelado - </strong>Status quando o pagamento for cancelado.<br />
+						<strong>Status Em Análise - </strong>Status quando o pagamento estiver em análise.<br />
+						<strong>Status Invertida - </strong>Status quando o pagamento estiver invertido.<br />
+						<strong>Status Em Revisão - </strong>Status quando o pagamento estiver em revisão.<br />
+						<strong>Status Reembolsado - </strong>Status quando o pagamento for reembolsado.<br />
+						<strong>Área Geográfica - </strong>Área Geográfica onde o pagamento via MoiP for aceito. (O MoiP só aceita da região brasileira), portanto não se não tiver essa opção, crie.<br />
+						<strong>Ordem - </strong>Ordem em que o pagamento via MoiP ira aparecer na forma de pagamento quando o cliente estiver finalizando a compra.
+					</dd>
+					<dt id="2_8_2">Configuração Avançada</dt>
+				    <dd>
+						<strong>Alterando Quantidades de Parcelas e Adicionando Juros</strong>
 						<blockquote>
 							<strong>1 - </strong>Abra o arquivo catalog/view/theme/default/template/payment/moip.tpl<br/>
-							<strong>2 - </strong>Localize as linhas <i>145 à 150</i> e altere para:<br/>
+							<strong>2 - </strong>Localize as linhas <i>152 à 157</i> e altere para:<br/>
 							<strong><br/><span style="color:#AA9900;">&lt;Parcelamentos&gt;</span><br/>
 							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;Parcelamento&gt;</span><br/>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AA9900;">&lt;MinimoParcelas&gt;</span>2<span style="color:#AA9900;">&lt;/MinimoParcelas&gt;</span><br/>
@@ -172,15 +213,15 @@
 							<strong>&lt;/Repassar&gt;</strong>
 						</blockquote>
 					</dd>
-				  <dt id="2_6">Desinstalação.</dt>
+				  <dt id="2_9">Desinstalação.</dt>
 				    <dd>
 						<strong>1 - </strong>Acesse: <b>http://www.seudominio.com.br/admin/</b>.<br/>
 						<strong>2 - </strong>Faça seu login.<br/>
 						<strong>3 - </strong>Vá em <i>Extensões</i> > <i>Formas de Pagamento</i> > Procure por <i>'MOIP'</i> e clique em <i>Desinstalar</i> (ao lado).<br/>
 						<strong>4 - </strong>Pronto! O Módulo foi desinstalado com sucesso.
 					</dd>
-				  <dt id="2_7">Agradecimentos.</dt>
-				    <dd>Muito Obrigado a você por utilizar nosso módulo.
+				  <dt id="2_10">Agradecimentos.</dt>
+				    <dd>Muito Obrigado a você, por utilizar nosso módulo.
 					<br/><br/>
 					<strong>Agradecimentos ao Desenvolvedores</strong><br/>
 					<a href="#" target="_blank">Glauco Oliveira</a> &lt;csakaos@hotmail.com&gt;<br/>
@@ -199,10 +240,12 @@
 						<li><a href="#2_2">Vantagens</a></li>
 						<li><a href="#2_3">Requisitos</a></li>
 						<li><a href="#2_4">Instalação</a></li>
-						<li><a href="#2_5_1">Configurações Básicas</a></li>
-						<li><a href="#2_5_2">Configurações Avançadas</a></li>
-						<li><a href="#2_6">Desinstalar</a></li>
-						<li><a href="#2_7">Agradecimentos</a></li>
+						<li><a href="#2_5">Token e Key de Produção</a></li>
+						<li><a href="#2_7">Notificação Automática</a></li>
+						<li><a href="#2_8_1">Configurações Básicas</a></li>
+						<li><a href="#2_8_2">Configurações Avançadas</a></li>
+						<li><a href="#2_9">Desinstalar</a></li>
+						<li><a href="#2_10">Agradecimentos</a></li>
 					</ul>
 				</div>
 			</div>
