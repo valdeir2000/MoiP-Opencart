@@ -1,0 +1,26 @@
+<!-- Created using vQmod XML Generator by UKSB - http://www.opencart-extensions.co.uk //-->
+<modification>
+	<id><![CDATA[MoiP Checkout Transparente]]></id>
+	<version><![CDATA[1.0]]></version>
+	<vqmver><![CDATA[1.1.6]]></vqmver>
+	<author><![CDATA[valdeir <valdeirpsr@hotmail.com>]]></author>
+	<file name="catalog/view/theme/default/template/common/header.tpl">
+		<operation>
+			<search position="replace"><![CDATA[<script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.7.1.min.js"></script>]]></search>
+			<add><![CDATA[<script type="text/javascript" src="<?php echo HTTPS_SERVER; ?>catalog/view/javascript/jquery/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="<?php echo $MoiPJS; ?>"></script>]]></add>
+		</operation>
+	</file>
+	<file name="catalog/controller/common/header.php">
+		<operation>
+			<search position="after"><![CDATA[$this->data['title'] = $this->document->getTitle();]]></search>
+			<add><![CDATA[
+		//Verifica se está em modo de teste
+		if ($this->config->get('moip_test')) {
+    		$this->data['MoiPJS'] = HTTPS_SERVER.'catalog/view/javascript/MoiP/producao.js';
+  		} else {
+			$this->data['MoiPJS'] = HTTPS_SERVER.'catalog/view/javascript/MoiP/desenvolvedor.js';
+		}]]></add>
+		</operation>
+	</file>
+</modification>
