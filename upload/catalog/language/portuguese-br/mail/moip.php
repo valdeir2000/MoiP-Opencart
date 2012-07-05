@@ -1,1 +1,12 @@
-<?php$_['text_update_subject']       = '%s - Pedido %s foi atualizado';$_['text_update_order']         = 'Order ID:'; //1º$_['text_update_date_added']    = 'Date Ordered:'; //2º$_['text_update_order_status']  = 'Seu pedido foi atualizado para o seguinte status:'; //3º$_['text_update_comment']       = 'Comentários do pedido:';$_['text_update_link']          = 'Para visualizar seu pedido clique no link abaixo:'; //4º$_['text_update_footer']        = 'Por favor, responda este e-mail se você tiver quaisquer dúvida.'; //5º$_['text_method_payment']       = 'Método de Pagamento: '; //6º?>
+<?php
+
+$_['text_update_subject']       = '%s - Pedido %s foi atualizado';
+$_['text_update_order']         = 'NÃºmero do Pedido:'; //1Âº
+$_['text_update_date_added']    = 'Data do Pedido:'; //2Âº
+$_['text_update_order_status']  = 'Seu pedido foi atualizado para o seguinte status:'; //3Âº
+$_['text_update_comment']       = 'ComentÃ¡rios no pedido:';
+$_['text_update_link']          = 'Para visualizar seu pedido clique abaixo:'; //4Âº
+$_['text_update_footer']        = 'Por favor, responda este email se vocÃª tiver alguma dÃºvida.'; //5Âº
+$_['text_method_payment']       = 'Forma pagamento: '; //6Âº
+
+?>
